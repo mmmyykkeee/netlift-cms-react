@@ -1,15 +1,15 @@
 backend:
   name: git-gateway
+  branch: main
 
-media_folder: static/images
-public_folder: /images
+media_folder: "public/images"
+public_folder: "/images"
 
 collections:
-  - name: "home"
-    label: "Home"
-    files:
-      - file: "src/components/Home/Home.md"
-        label: "Home"
-        fields:
-          - { name: "image", label: "Image", widget: "image" }
-          - { name: "content", label: "Content", widget: "markdown" }
+  - name: "navbar"
+    label: "Navbar"
+    folder: "src/components/navbar"
+    create: true
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "link", label: "Link", widget: "string" }
