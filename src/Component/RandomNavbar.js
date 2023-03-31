@@ -3,11 +3,11 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 function RandomNavbar() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark"  variant="dark" expand="lg">
       <Navbar.Brand href="#" className='mb-4'>My Website</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
+      <Navbar.Collapse id="basic-navbar-nav" className='text-center container'>
+        <Nav className="ml-auto ">
           <Nav.Link className='links' href="#">About</Nav.Link>
           <Nav.Link className='links' href="#">Services</Nav.Link>
           <Nav.Link className='links' href="#">Portfolio</Nav.Link>
