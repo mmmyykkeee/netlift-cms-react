@@ -10,7 +10,7 @@ function Header() {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    axios.get('./README.md').then((response) => {
+    axios.get('').then((response) => {
       setContent(response.data);
     });
   }, []);
@@ -21,7 +21,7 @@ function Header() {
       <h1 className='text-center'>This is my first App</h1>
       <RandomNavbar />
       <Home />
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <div>{content}</div>
     </div>
   )
 }
