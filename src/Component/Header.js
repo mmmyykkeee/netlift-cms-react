@@ -6,7 +6,7 @@ import Markdown from 'markdown-to-jsx';
 
 function Header() {
 
-  const file_name = 'react_pinterest_clone.md';
+  const file_name = '../components/mike.md';
   const [post, setPost] = useState('');
 
   useEffect(() => {
