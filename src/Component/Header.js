@@ -10,7 +10,7 @@ function Header() {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    axios.get('').then((response) => {
+    axios.get('./README.md').then((response) => {
       setContent(response.data);
     });
   }, []);
